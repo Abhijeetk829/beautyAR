@@ -1,5 +1,116 @@
-
-        
+ body {
+    height: 100%;
    
-    
-  
+    margin-top: 50px;
+    margin-left: 35%;
+    /* background-image: url('../images/bg2.jpg'); */
+}
+
+#lip, #lip1{
+    transition: box-shadow 0.5s;
+    border-radius: 125px;
+    cursor:pointer;
+}
+
+#lip:hover{
+    box-shadow: 0px 0px 10px 2px #f10404;
+}
+
+#lip1:hover{
+    box-shadow: 0px 0px 10px 2px #0e0606;
+}
+
+.trans {
+    position: absolute;
+    left: 0em;
+    right: 0;
+    display: block;
+    margin: 0em;
+}
+
+#YMK-module {
+    text-align: center;
+    display: flex;
+}
+
+div {
+    margin: auto;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.console {
+    transition: all 500ms;
+}
+
+.cart_options {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.add_to_cart {
+    width: 478px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+    height: 10px;
+}
+
+#addToCart {
+    position: relative;
+    top: -40px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.cart_options {
+    padding: 20px;
+}
+
+.cart {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.cart-image {
+    width: 50px;
+    height: auto;
+}
+
+.cart_item_text {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.cart_item {
+    position: relative;
+}
+
+.delete_from_cart {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    cursor: pointer;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.notifications {
+    position: absolute;
+    top: 2px;
+    border-radius: 2px;
+    right: 10;
+    background-color: rgb(130, 223, 8);
+    padding: 0 5px;
+}

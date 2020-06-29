@@ -1,0 +1,58 @@
+<div class="trans">
+    <div id="YMK-module"></div>
+
+    <div class="add_to_cart">
+        <i class="material-icons" id="addToCart" ng-if="currentProduct" ng-click="AddToCart()">
+            add_shopping_cart
+        </i>
+    </div>
+
+    <div class="console text-center">
+        <div class="makeup-type">
+            <button class="cosmetic_type btn btn-secondary" data-type="{{item.Type}}" ng-repeat="item in MasterData.Cosmetics" ng-click="CosmeticTypeClick()">{{item.Name}} </button>
+        </div>
+
+        <div class="{{SelectedCosmetic.Type}}">
+            <button class="brand_name btn btn-secondary" ng-repeat="item in SelectedCosmetic.Brand" ng-click="BrandClick()">{{item.Name}} </button>
+        </div>
+        
+        <div class="{{item.Id}}">
+            <button ng-click="ApplyMakeup()" ng-repeat="item in SelectedBrand.Variants">
+                <img class="item_name"  id='{{SelectedBrand.Type}}' src="{{item.Image}}" width="75" height="70" alt="{{SelectedBrand.Type}}">
+            </button>
+        </div>
+
+        <button class="btn btn-sm btn-danger" ng-if="SelectedCosmetic" ng-click="ClearSelection()">
+            Clear Selection
+        </button>
+    </div>
+</div>
+
+<div class="cart_options">
+    <i class="material-icons" ng-click="AddTouchedToCart()">
+        add_to_photos
+    </i>
+    <span class="notifications" ng-if="TouchedProduct.length">
+        {{TouchedProduct.length}}
+    </span>
+    <i class="material-icons" ng-click="ViewCart()" data-click="0">
+        shopping_cart
+    </i>
+    <span class="notifications" ng-if="Cart.length">
+        {{Cart.length}}
+    </span>
+    <div class="cart">
+        <div ng-repeat="item in Cart" class="cart_item">
+            <span class="cart_items">
+                <img src="{{item.Image}}" alt="" class="img-fluid cart-image">
+                <span class="cart_item_text">{{item.Id}}</span>
+            </span>
+            <i class="material-icons text-right delete_from_cart" ng-click="RemoveFromCart()">
+                close
+            </i>
+        </div>
+        <p class="no_items text-center" ng-if="!Cart.length">
+            No items to show here.
+        </p>
+    </div>
+</div>

@@ -1,111 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="beautyAR">
 <title>Beauty AR</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
 
 <body>
-    <style>
-        body {
-        height: 100%;
-       
-        margin-top: 50px;
-        margin-left: 35%;
-        background-image: url(images/bg2.jpg);}
-        #lip,#lip1{
-transition:box-shadow 0.5s;
-border-radius: 125px;
-cursor:pointer;
-}
 
-#lip:hover{
-box-shadow: 0px 0px 10px 2px #f10404;
-}
-#lip1:hover{
-box-shadow: 0px 0px 10px 2px #0e0606;
-}   
-      
-    </style>
+    <ui-view></ui-view>
     
-    
-    <script>
-        (function (d,k) {
-            var s = d.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = 'https://plugins-media.perfectcorp.com/smb/sdk.js?apiKey=' + k;
-            var x = d.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-        })(document, 'SMB-Ojo6MjgyMDE=');
-        </script>
-        <div id="YMK-module"></div>
-        <script>
-            window.ymkAsyncInit = function() {
-                YMK.open()
-            }
-            </script>
-        <div class="trans">
-            <button id="idd">
-                Lipstick
-            </button>
-                
-            <div id="id01">
-
-                    <button  onclick="YMK.applyMakeupBySku('NYC_LIP_01')"  >
-                        <img id="lip" src="images/lip4.jpg " width="75" height="70" alt="Lipstick">
-                        
-                        </button>
-                        <button onclick="YMK.applyMakeupBySku('NYC_LIP_02')"  >
-                            <img id="lip" src="images/lip1.jpg " width="75" height="70" alt="Lipstick">
-                            
-                            </button>
-                            <button onclick="YMK.applyMakeupBySku('REV_LIP_03')"  >
-                                <img id="lip" src="images/lip3.jpg " width="75" height="70" alt="Lipstick">
-                                
-                                </button>
-                    
-                            </div>
-                            <!-- <script>
-                                document.getElementById("idd").onclick = function() {myFunction()};
-                                
-                                function myFunction() {
-                                  document.getElementById("idd").innerHTML = document.getElementById("id01").innerHTML;
-                                }
-                                </script> -->
-                                
-            
-                <button onclick="YMK.applyMakeupBySku('BLUSH_GLOO_002')">
-                    <img id="lip" src="images/blush.png " width="75" height="70" alt="Blush">
-                    </button>
-            
-                    <button onclick="YMK.applyMakeupBySku('SHA_BLC_003')">
-                        <img id="lip" src="images/eyeshadow.png " width="75" height="70" alt="Eyeshadow">
-                </button>
-                
-               
-                <button onclick="YMK.applyMakeupBySku('LINER_004')">
-                    <img id="lip" src="images/eyeliner.png " width="75" height="70" alt="Eyeliner">
-                </button>
-            
-
-            <button onclick="YMK.applyMakeupByLook('SUN_LOOK_0001')">
-                <img id="lip" src="images/fullmakeup.png " width="85" height="70" alt="Eyeliner">
-                    </button>
-                </div>
-
-                    
-                            
-
-                
-                    
-        
-                    
-                        
-             
-                    
-                
-                   
-                    
+    <script src="https://plugins-media.perfectcorp.com/smb/sdk.js?apiKey=SMB-Ojo6MjgyMDE="></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.25/angular-ui-router.js"></script>
+    <script src="./masterdata.js"></script>
+    <script src="./app.js"></script>
 </body>
+</html>
