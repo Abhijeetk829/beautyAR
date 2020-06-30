@@ -45,6 +45,15 @@ div {
     transition: all 500ms;
 }
 
+.item_name{
+    transition: box-shadow 0.5s;
+    border-radius: 125px;
+    cursor:pointer;
+}
+.item_name:hover{
+    box-shadow: 0px 0px 10px 2px #f10404;
+}
+
 .cart_options {
     position: absolute;
     right: 0;

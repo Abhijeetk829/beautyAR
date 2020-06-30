@@ -7,17 +7,17 @@ var MasterData = {
             Active: false,
             Brand: [
                 {
-                    Name: "L'Oreal",
+                    Name: "Revlon",
                     Active: false,
                     Type: 'Lipstick',
                     Variants: [
                         {
-                            Id: 'NYC_LIP_01',
-                            Image: 'images/lip4.jpg',
+                            Id: 'REV_LIP_01',
+                            Image: 'images/lip8.jpg',
                         },
                         {
-                            Id: 'NYC_LIP_02',
-                            Image: 'images/lip1.jpg'
+                            Id: 'REV_LIP_02',
+                            Image: 'images/lip9.jpg'
                         },
                         {
                             Id: 'REV_LIP_03',
@@ -28,10 +28,37 @@ var MasterData = {
                             Image: 'images/lip2.jpg'
                         },
                         {
-                            Id: 'NYC_LIP_03',
-                            Image: 'images/lip5.jpg'
+                            Id: 'REV_LIP_05',
+                            Image: 'images/lip10.jpg'
                         }
+                    ]},
+                        {
+                            Name: "Nyx ProfessionalMakeup",
+                            Active: false,
+                            Type: 'Lipstick',
+                            Variants: [
+                                {
+                                    Id: 'NYC_LIP_01',
+                                    Image: 'images/lip4.jpg',
+                                },
+                                {
+                                    Id: 'NYC_LIP_02',
+                                    Image: 'images/lip1.jpg'
+                                },
+                                {
+                                    Id: 'NYC_LIP_04',
+                                    Image: 'images/lip6.jpg'
+                                },
+                                {
+                                    Id: 'NYC_LIP_05',
+                                    Image: 'images/lip7.jpg'
+                                },
+                                {
+                                    Id: 'NYC_LIP_03',
+                                    Image: 'images/lip5.jpg'
+                                }
                     ]
+                    
                 }
             ]
         },
@@ -41,11 +68,36 @@ var MasterData = {
             Image: './images/blush.jpg',
             Brand: [
                 {
-                    Name: "L'Oreal",
+                    Name: "Flormar",
                     Variants: [
                         {
                             Id: 'blush_01',
                             Image: 'images/blush1.jpg'
+                        },
+                        {
+                            Id: 'blush_02',
+                            Image: 'images/blush6.jpg'
+                        },
+                        {
+                            Id: 'blush_03',
+                            Image: 'images/blush9.jpg'
+                        },
+                        {
+                            Id: 'blush_04',
+                            Image: 'images/blush11.jpg'
+                        },
+                        {
+                            Id: 'blush_05',
+                            Image: 'images/blush10.jpg'
+                        },
+                    ]
+                },
+                {
+                    Name: "Deborah",
+                    Variants: [
+                        {
+                            Id: 'blush_01',
+                            Image: 'images/blushh.jpg'
                         },
                         {
                             Id: 'blush_02',
@@ -63,8 +115,9 @@ var MasterData = {
                             Id: 'blush_05',
                             Image: 'images/blush5.jpg'
                         },
-                    ]
-                }
+            ]
+            
+        }
             ]
         },
         {
@@ -73,27 +126,53 @@ var MasterData = {
             Image: './images/eyeshadow.jpg',
             Brand: [
                 {
-                    Name: "L'Oreal",
+                    Name: "Gosh",
                     Variants: [
                         {
                             Id: 'Glam_01',
                             Image: 'images/eyeshadow1.jpg'
                         },
                         {
-                            Id: 'Glam_02',
+                            Id: 'GLAM_02',
                             Image: 'images/eyeshadow2.jpg'
                         },
+                        
                         {
-                            Id: 'Glam_03',
+                            Id: 'sha_005',
+                            Image: 'images/sha10.jpg'
+                        },
+                        {
+                            Id: 'sha_03',
+                            Image: 'images/sha8.jpg'
+                        },
+                        {
+                            Id: 'sha_006',
+                            Image: 'images/sha9.jpg'
+                        },
+                    ]
+                },
+                {
+                    Name: "WyconCosmetics",
+                    Variants: [
+                        {
+                            Id: 'sha_06',
+                            Image: 'images/sha6.jpg'
+                        },
+                        {
+                            Id: 'sha_07',
+                            Image: 'images/sha7.jpg'
+                        },
+                        {
+                            Id: 'sha_03',
                             Image: 'images/eyeshadow3.jpg'
                         },
                         {
-                            Id: 'Glam_04',
+                            Id: 'sha_006',
                             Image: 'images/eyeshadow4.jpg'
                         },
                         {
-                            Id: 'Glam_05',
-                            Image: 'images/eyeshadow5.jpg'
+                            Id: 'sha_005',
+                            Image: 'images/shaa8.jpg'
                         },
                     ]
                 }
@@ -105,30 +184,58 @@ var MasterData = {
             Image: './images/eyeliner.jpg',
             Brand: [
                 {
-                    Name: "L'Oreal",
+                    Name: "Rimmel",
                     Variants: [
                         {
                             Id: 'LINER_004',
                             Image: 'images/liner1.jpg'
                         },
                         {
-                            Id: 'LINER_02',
+                            Id: 'liner_02',
                             Image: 'images/liner2.jpg'
                         },
                         {
-                            Id: 'LINER_03',
+                            Id: 'liner_03',
                             Image: 'images/liner3.jpg'
                         },
                         {
-                            Id: 'LINER_04',
-                            Image: 'images/liner4.jpg'
+                            Id: 'liner_04',
+                            Image: 'images/liner6.jpg'
                         },
                         {
-                            Id: 'LINER_05',
+                            Id: 'liner_05',
                             Image: 'images/liner5.jpg'
                         },
                     ]
+                },
+                {
+                    Name: "Gosh",
+                    Variants: [
+                        {
+                            Id: 'LINER_004',
+                            Image: 'images/li1.jpg'
+                        },
+                        {
+                            Id: 'liner_02',
+                            Image: 'images/lin2.jpg'
+                        },
+                        {
+                            Id: 'liner_03',
+                            Image: 'images/lin5.jpg'
+                        },
+                        {
+                            Id: 'liner_04',
+                            Image: 'images/liner4.jpg'
+                        },
+                        {
+                            Id: 'liner_05',
+                            Image: 'images/li7.jpg'
+                        },
+                    ]
                 }
+                
+                
+                
             ]
         }
     ]
